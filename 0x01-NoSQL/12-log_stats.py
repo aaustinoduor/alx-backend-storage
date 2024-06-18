@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-""" 12. Log stats """
+""" task 12 """
 from pymongo import MongoClient
 
 
 def print_nginx_request_logs(nginx_collection):
-    """ log_stats. """
+    """ prints stats about Nginx request logs. """
     print('{} logs'.format(nginx_collection.count_documents({})))
     print('Methods:')
     methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE']
